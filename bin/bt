@@ -30,6 +30,7 @@
 # Values
 FONT_FAMILY="${BUI_FONT_MONO_FAMILY:-Liberation Mono}"
 FONT_SIZE="${BUI_FONT_MONO_SIZE:-10.0}"
+OPACITY="${BUI_OPACITY:-1.0}"
 
 case "$BUI_FONT_ANTIALIAS" in
 	'true'|'') FONT_ANTIALIAS='true'  ;;
@@ -43,7 +44,7 @@ esac
 
 
 # Start
-st -f "$FONT_FAMILY:size=$FONT_SIZE:antialias=$FONT_ANTIALIAS:autohint=$FONT_HINT" -A "$BUI_OPACITY" "$@"
+st -f "$FONT_FAMILY:size=$FONT_SIZE:antialias=$FONT_ANTIALIAS:autohint=$FONT_HINT" -A "$OPACITY" "$@"
 
 
 exit 0
