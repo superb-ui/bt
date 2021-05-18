@@ -1,0 +1,8 @@
+[Desktop Entry]
+Name=BT
+Comment=ST terminal that SuperB
+Exec="bt-app"
+Icon=utilities-terminal
+Terminal=false
+Type=Application
+Categories=System;TerminalEmulator;
