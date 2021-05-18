@@ -6,11 +6,11 @@
 #  / /_/ // /
 # /_____//_/
 
-# File:         bt
+# File:         real-bt
 # Description:  BUI for ST terminal
 # Author:       NNB
 #               └─ https://github.com/NNBnh
-# URL:          https://github.com/NNBnh/bt
+# URL:          https://github.com/NNBnh/real-bt
 # License:      GPLv3
 
 #    This program is free software: you can redistribute it and/or modify
@@ -27,8 +27,23 @@
 #    along with this program.  If not, see <https://www.gnu.org/licenses/>.
 
 
+# Values
+FONT_FAMILY="${BUI_FONT_MONO_FAMILY:-Monospace}"
+FONT_SIZE="${BUI_FONT_MONO_SIZE:-10.0}"
+
+case "$BUI_FONT_ANTIALIAS" in
+	'true'|'') FONT_ANTIALIAS='true'  ;;
+	*)         FONT_ANTIALIAS='false' ;;
+esac
+
+case "$BUI_HINT_STYLE" in
+	'slight'|'medium'|'full'|'') FONT_HINT='true'  ;;
+	*)                           FONT_HINT='false' ;;
+esac
+
+
 # Start
-"$(getent passwd "$LOGNAME" | cut -d: -f7)" -c "real-bt \"$@\""
+st -f "$FONT_FAMILY:size=$FONT_SIZE:antialias=$FONT_ANTIALIAS:autohint=$FONT_HINT" -A "$BUI_OPACITY" "$@"
 
 
 exit 0
