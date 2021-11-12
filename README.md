@@ -4,7 +4,7 @@
 <p align="center"><a href="https://github.com/NNBnh/bt/watchers"><img src="https://img.shields.io/github/watchers/NNBnh/bt?labelColor=073551&color=4EAA25&style=flat-square"></a> <a href="https://github.com/NNBnh/bt/stargazers"><img src="https://img.shields.io/github/stars/NNBnh/bt?labelColor=073551&color=4EAA25&style=flat-square"></a> <a href="https://github.com/NNBnh/bt/network/members"><img src="https://img.shields.io/github/forks/NNBnh/bt?labelColor=073551&color=4EAA25&style=flat-square"></a> <a href="https://github.com/NNBnh/bt/issues"><img src="https://img.shields.io/github/issues/NNBnh/bt?labelColor=073551&color=4EAA25&style=flat-square"></a></p>
 
 ## 💡 About
-`bt` is a [`portable sh`](https://github.com/dylanaraps/pure-sh-bible) script to launch [ST](https://st.suckless.org) terminal with UI setting using [BUI environment variables](https://github.com/NNBnh/dots/wiki/bui).
+`bt` is a [`portable sh`](https://github.com/dylanaraps/pure-sh-bible) script to launch [ST](https://st.suckless.org) terminal with UI setting using [BUI environment variables](https://github.com/superb-ui/bui).
 
 ## 🚀 Setup
 ### 🧾 Dependencies
